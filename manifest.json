@@ -1,0 +1,29 @@
+ {
+  "manifest_version": 2,
+  "name": "Enapps support system",
+  "version": "1.0",
+
+  "icons": {
+    "128": "ticket.png"
+
+  },
+  "content_scripts": [
+    {
+      "matches": [ "*://*/*" ],
+      "js": [ "content.js" ]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "http://losttime.su/*"
+  ],
+
+      "browser_action": {
+        "default_title": "Enapps support System",
+        "default_icon": "ticket.png",
+        "default_popup": "popup.html"
+    }
+
+}
